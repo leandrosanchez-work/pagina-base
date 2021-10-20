@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsicoWeb</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jfif" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="conocenos.html">CONOCENOS</a></li>
+                    <li><a href="areasdetrabajo.html">AREAS DE TRABAJO</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contactame.html">CONTACTAME</a></l>
+                </ul>
+            </div>
+            <i class="fa fa-bars"onclick="showMenu()" ></i>
+        </nav>
+        <h1>CONTACTAME</h1>
+    </section>
+    
+    <!-- Contactame-->
+    <section class="contactame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837.5418969705621!2d-68.84850827079153!3d-32.893737072710636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e090ff489e63f%3A0x4ff3f228a7dea254!2sAv.%20Col%C3%B3n%20574%2C%20M5500%20Mendoza!5e0!3m2!1ses!2sar!4v1633912585021!5m2!1ses!2sar" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+    </section>
+    <section class="contactame-us">
+
+        <div class="row">
+            <div class="contactame-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Av. Colon 574, Ciudad Mendoza</h5>
+                        <p>Planta baja, Oficina 6</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone "></i>
+                    <span>
+                        <h5>(0261) 155</h5>
+                        <p>Lunes a Viernes, 9 a 18 hs.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>mbvetrano@gmail.com</h5>
+                        <p>Envianos tu consulta</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contactame-col">
+                <form action="form-handler.php" method="POST">
+                    <input type="text" name= "name" placeholder="Nombre" required>
+                    <input type="text" name= "email" placeholder="Correo" required>
+                    <input type="text" name= "ciudad" placeholder="Ciudad" required>
+                    <textarea rows="8" name= "message" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="hero-btn yellow-btn">ENVIAR</button>
+                </form>
+
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>Seguinos en nuestras redes</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Quaerat.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Realizado por <i class="fa fa-television"></i> by Black Soft</p>
+    </section>
+
+
+
+
+    <!--Java scrpy to menu-->
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+</html>
